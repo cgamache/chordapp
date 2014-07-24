@@ -21,7 +21,17 @@ function chord (x, y) {
 	 	c.fillStyle = 'black';
 	 		//draws strings
 		
+	 	for (i = 0; i < 6; i++) {
+	 	  	c.fillRect(x + (i * 20), y, 3, 200);
+	 	  	c.fillRect(x, y + (i * 20), 100, 3);
+	 	
+	 	}
 
+	 	//draws nut
+		c.fillRect(x, y, 100, 5);
+
+
+/*
 		c.fillRect(x, y, 3, 200);  //x, y, width, height
 		c.fillRect(x + 20, y, 3, 200);
 		c.fillRect(x + 40, y, 3, 200);
@@ -29,8 +39,7 @@ function chord (x, y) {
 		c.fillRect(x + 80, y, 3, 200);
 		c.fillRect(x + 100, y, 3, 200);
 
-		//draws nut
-		c.fillRect(x, y, 100, 5);
+		
 
 		//frets
 		c.fillRect(x, y, 100, 3);
@@ -38,6 +47,7 @@ function chord (x, y) {
 		c.fillRect(x, y + 40, 100, 3);
 		c.fillRect(x, y + 60, 100, 3);
 		c.fillRect(x, y + 80, 100, 3);
+*/
 	 };
 
 
